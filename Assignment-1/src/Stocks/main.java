@@ -8,6 +8,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Main.
+ */
 public class main {
 
     public static void main(String[] args) throws IOException {
@@ -238,7 +241,11 @@ public class main {
     }
 
 
-
+    /**
+     * Assisting methods for sorting.
+     * @param stack
+     * @param top
+     */
     static void insertTop(StackLL stack, Stock top)
     {
         if(stack.isEmpty() || top.getValue() > stack.getTop().getStock().getValue())
@@ -252,6 +259,10 @@ public class main {
         stack.push(temp);
     }
 
+    /**
+     * Assisting methods for sorting.
+     * @param stack
+     */
     static void sortStack(StackLL stack)
     {
         if(!stack.isEmpty())

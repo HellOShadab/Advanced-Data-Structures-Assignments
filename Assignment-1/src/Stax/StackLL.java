@@ -2,25 +2,46 @@ package Stax;
 
 import Stocks.Stock;
 
+/**
+ * A Stack class that is made using Nodes to create a linked list.
+ *
+ * @author ShadabKhan
+ */
 public class StackLL {
     Node top;
     int size;
 
-        public StackLL()
+    /**
+     * Constructor to set stack top and size to null and 0 respectively.
+     */
+    public StackLL()
     {
         this.top = null;
         this.size = 0;
     }
 
+    /**
+     * Checks if stack is empty.
+     */
     public boolean isEmpty()
     {
         return top == null;
     }
 
+    /**
+     * Getter method for Node at top.
+     *
+     * @return top
+     */
     public Node getTop() {
         return top;
     }
 
+    /**
+     * Setter method for Node at top.
+     *
+     * @param top
+     */
     public void setTop(Node top) {
         this.top = top;
     }
@@ -29,6 +50,12 @@ public class StackLL {
         return size;
     }
 
+    /**
+     * Push method for Stack. Creates a Node from a Stock object
+     * and then pushes it into stack. Performs change to the top accordingly.
+     *
+     * @param stock
+     */
     public void push(Stock stock)
     {
         Node n = new Node(stock);
@@ -39,6 +66,12 @@ public class StackLL {
         size++;
     }
 
+    /**
+     * Pop method for Stack. Pops the top element in the stack.
+     * Does changes to top accordingly.
+     *
+     * @return Stock
+     */
     public Stock pop()
     {
         if(getTop() == null) {
@@ -51,6 +84,11 @@ public class StackLL {
         return n.getStock();
     }
 
+    /**
+     * Method to Peak the current element at the top of the stack.
+     *
+     * @return Stock
+     */
     public Stock Peak()
     {
         if(getTop() == null)

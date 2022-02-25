@@ -2,18 +2,29 @@ package DQ;
 
 import Stocks.Stock;
 
+/**
+ * A DeQueue class that is made using Nodes to create a doubly linked list.
+ *
+ * @author ShadabKhan
+ */
 public class DeQueueDLL {
     DNode front;
     DNode rear;
 
     int size;
 
+    /**
+     * Constructor to initialize all values to 0 and null.
+     */
     public DeQueueDLL()
     {
         this.front = this.rear = null;
         this.size = 0;
     }
 
+    /**
+     * Checks if DeQueue is empty.
+     */
     boolean isEmpty()
     {
         return front == null;
@@ -23,6 +34,12 @@ public class DeQueueDLL {
         return size;
     }
 
+    /**
+     * Element insertion in queue from front.
+     * Appropriate changes to front and rear pointers made.
+     *
+     * @param stock
+     */
     public void enQueueFront(Stock stock)
     {
         DNode node = new DNode(stock);
@@ -37,6 +54,12 @@ public class DeQueueDLL {
         size++;
     }
 
+    /**
+     * Element insertion in queue from rear.
+     * Appropriate changes to front and rear pointers made.
+     *
+     * @param stock
+     */
     public void enQueueRear(Stock stock)
     {
         DNode node = new DNode(stock);
@@ -51,6 +74,12 @@ public class DeQueueDLL {
         size++;
     }
 
+    /**
+     * Element extraction in queue from front.
+     * Appropriate changes to front and rear pointers made.
+     *
+     * @return stock
+     */
     public Stock deQueueFront()
     {
         if(this.isEmpty())
@@ -73,6 +102,12 @@ public class DeQueueDLL {
         }
     }
 
+    /**
+     * Element extraction in queue from rear.
+     * Appropriate changes to front and rear pointers made.
+     *
+     * @return stock
+     */
     public Stock deQueueRear()
     {
         if(this.isEmpty())
@@ -95,6 +130,11 @@ public class DeQueueDLL {
         }
     }
 
+    /**
+     * Peak into deQueue from the front.
+     *
+     * @return stock
+     */
     public Stock peakFront()
     {
         if(this.isEmpty())
@@ -105,6 +145,11 @@ public class DeQueueDLL {
         return front.getStock();
     }
 
+    /**
+     * Peak into deQueue from the rear.
+     *
+     * @return stock
+     */
     public Stock peakRear()
     {
         if(this.isEmpty())
