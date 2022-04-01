@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"heap","l":"Covid"},{"p":"heap","l":"HeapNode"},{"p":"heap","l":"Main"},{"p":"heap","l":"MinHeap"}];updateSearchResults();
