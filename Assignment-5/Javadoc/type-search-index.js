@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"BellmanFord"},{"p":"<Unnamed>","l":"Dijkstra"},{"p":"<Unnamed>","l":"FloydWarshall"},{"p":"<Unnamed>","l":"Graph"},{"p":"<Unnamed>","l":"GraphGenerator"},{"p":"<Unnamed>","l":"Main"},{"p":"<Unnamed>","l":"Node"},{"p":"<Unnamed>","l":"NodeComparator"}];updateSearchResults();
