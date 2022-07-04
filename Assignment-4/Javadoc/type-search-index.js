@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"AVLTree"},{"p":"<Unnamed>","l":"BinaryTree"},{"p":"<Unnamed>","l":"BinaryTreeNode"},{"p":"<Unnamed>","l":"HashTableAVL"},{"p":"<Unnamed>","l":"HashTableLinear"},{"p":"<Unnamed>","l":"Main"},{"p":"<Unnamed>","l":"Voter"}];updateSearchResults();
