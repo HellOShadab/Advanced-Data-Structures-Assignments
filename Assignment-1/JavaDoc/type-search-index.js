@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"DQ","l":"DeQueueDLL"},{"p":"DQ","l":"DNode"},{"p":"Stocks","l":"main"},{"p":"Stax","l":"Node"},{"p":"Stax","l":"StackLL"},{"p":"Stocks","l":"Stock"}];updateSearchResults();
